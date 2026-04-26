@@ -1,6 +1,6 @@
 # SauceDemo QA Automation Framework
 
-[![Playwright Tests](https://github.com/YOUR_USERNAME/saucedemo-qa-framework/actions/workflows/playwright.yml/badge.svg)](https://github.com/YOUR_USERNAME/saucedemo-qa-framework/actions/workflows/playwright.yml)
+[![Playwright Tests](https://github.com/Rajeev-Roshan/saucedemo-qa-framework/actions/workflows/playwright.yml/badge.svg)](https://github.com/YOUR_USERNAME/saucedemo-qa-framework/actions/workflows/playwright.yml)
 [![Allure Report](https://img.shields.io/badge/Allure-Report-orange)](https://YOUR_USERNAME.github.io/saucedemo-qa-framework/)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
 ![Playwright](https://img.shields.io/badge/Playwright-1.44-green)
@@ -62,7 +62,7 @@ saucedemo-qa-framework/
 ### Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/saucedemo-qa-framework.git
+git clone https://github.com/Rajeev-Roshan/saucedemo-qa-framework.git
 cd saucedemo-qa-framework
 npm install
 npx playwright install
