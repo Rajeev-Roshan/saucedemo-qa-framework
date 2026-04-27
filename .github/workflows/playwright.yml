@@ -14,6 +14,10 @@ on:
         required: false
         default: 'smoke'
 
+# Grant write permissions to GITHUB_TOKEN globally
+permissions:
+  contents: write
+
 jobs:
   test:
     name: Run Tests
@@ -84,6 +88,10 @@ jobs:
     needs: test
     if: always() && github.ref == 'refs/heads/main'
 
+    # Explicit write permission on this job too
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -122,9 +130,6 @@ jobs:
             cp -r history allure-results/history
           fi
           allure generate allure-results --clean -o allure-report
-
-      - name: Copy history for next run
-        run: cp -r allure-report/history history || true
 
       - name: Deploy Allure Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
