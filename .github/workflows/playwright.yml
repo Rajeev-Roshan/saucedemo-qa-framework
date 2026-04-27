@@ -35,7 +35,7 @@ jobs:
         run: npm ci
 
       - name: Install Playwright browsers
-        run: npx playwright install --with-deps chromium
+        run: npx playwright install --with-deps chromium firefox
 
       - name: Run smoke tests
         if: github.event.inputs.test_tag == 'smoke' || github.event.inputs.test_tag == ''
